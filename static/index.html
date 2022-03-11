@@ -33,11 +33,11 @@
         var W = canvas.width = window.innerWidth - 6;
         var H = canvas.height = window.innerHeight - 50;
         var background = new Image();
-
         background.src = "background.jpg";
-        console.log(background)
+
         window.onload = function() {
             context.drawImage(background, 0, 0)
+            update();
         }
 
         function sendJSONXMLHTTPRequest(url, objects, callback) {
@@ -313,7 +313,9 @@
             //XXX: TODO Get the world from the webservice using a XMLHTTPRequest
 
             sendJSONXMLHTTPRequest('/world', undefined, (res) => {
-                world = res
+                world = res;
+                drawNextFrame();
+                drawFrame();
             })
             drawFrame();
 
