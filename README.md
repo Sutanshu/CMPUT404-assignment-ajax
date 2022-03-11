@@ -19,4 +19,3 @@ Citations:
 - https://dev.to/ascorbic/a-more-realistic-html-canvas-paint-tool-313b
 - https://unsplash.com/photos/OG44d93iNJk
 
-Note: You have to focus and click on the canvas of a different browser for the browser to update in "real time", the events from another browser. This design assumes the user A has a focus on the browser, to get updates on the same localhost by a different user (user B, on a different browser) -- much like Trello. 
